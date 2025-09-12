@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h4>Lab - Upload Report</h4>
+<form method="post" enctype="multipart/form-data">
+<div class="mb-3">
+<label class="form-label">Batch ID</label>
+<input class="form-control" name="batch_id" required>
+</div>
+<div class="mb-3">
+<label class="form-label">PDF Report</label>
+<input type="file" class="form-control" name="report" accept="application/pdf">
+</div>
+<button class="btn btn-primary" type="submit">Upload & Hash</button>
+</form>
+{% endblock %}

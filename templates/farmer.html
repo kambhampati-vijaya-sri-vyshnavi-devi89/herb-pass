@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<h4>Farmer - Create Herb Batch</h4>
+<form method="post" enctype="multipart/form-data">
+<div class="mb-3">
+<label class="form-label">Herb name</label>
+<input class="form-control" name="herb_name" required>
+</div>
+<div class="mb-3">
+<label class="form-label">Farmer name</label>
+<input class="form-control" name="farmer_name">
+</div>
+<div class="mb-3">
+<label class="form-label">Phone</label>
+<input class="form-control" name="phone">
+</div>
+<div class="mb-3">
+<label class="form-label">GPS lat</label>
+<input class="form-control" name="gps_lat" placeholder="e.g. 30.9087">
+</div>
+<div class="mb-3">
+<label class="form-label">GPS lng</label>
+<input class="form-control" name="gps_lng" placeholder="e.g. 78.1023">
+</div>
+<div class="mb-3">
+<label class="form-label">Photo (jpg/png)</label>
+<input type="file" class="form-control" name="photo" accept="image/*">
+</div>
+<button class="btn btn-primary" type="submit">Create Batch & Generate QR</button>
+</form>
+{% endblock %}
